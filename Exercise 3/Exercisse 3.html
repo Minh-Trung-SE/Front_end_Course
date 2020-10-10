@@ -5,22 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <style>
-    
+    /*format header and footer*/
+    .header_footer{
+        color:white;
+        background-color: blueviolet;
+        padding: 10px 20px 10px 60px;
+    }
+    /*format content 1*/
+    .content{
+        background: white;
+        padding: 20px 20px 20px 60px;
+    }
+    /*format layout course*/
+    .picture_course{
+        width: 385px;
+        height: 200px;
+        margin-left: 60px;
+        border-top-left-radius: 2%;
+        border-top-right-radius: 2%;
+    }
+    /*format layout infomation course*/
+    .information_course{
+        width: 381px;
+        height: 150px;
+        border-bottom: 2px solid blanchedalmond;
+        border-left: 2px solid blanchedalmond;
+        border-right: 2px solid blanchedalmond;
+        border-top: 2px solid blanchedalmond;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        margin-top: -4px;
+    }
 </style>
+ 
 <body>
-    <header>
-        <img src="logo.png" width="40" height="40">
+    <header class="header_footer">
+        <img src="logo.png" width="40" height="40" style="border-radius: 50%">
         <h1>PlusPlus Acadermy</h1>
     </header>
 
     <main>
+        <div id="content1" class="content">
+            <h1>PLUS PLUS, WHERE YOU CAN SHINE WITH US</h1>
+            <p>It is a long estabished fact that a reder will be distracted by the readable content of a page when looking at its layout. 
+                The point of using Lorem Ipsun it has a more-or-less normal distribution of letter, 
+                as opposed using 'Content here, content here', making it look like readable English.
+                Many desktop publishing packages and web page editors 
+                now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will 
+                uncover many web sites still in their infancy. Various versions have evolve over the year, 
+                sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            <h2 style="color: blue;">SOLDOUT COURSE</h2>
+        </div>
+        
+        <div>
+            <img src="Front-end.png" class="picture_course"> 
+        </div>
 
+        <div class="information_course">
+            <p style="padding-left: 20px;">Front-end fundametal course.</p>
+            <img src="teacher.jpg" width="60px" height="60px" style="border-radius: 50%; padding-left: 20px;" >Doremon    
+            <p style="text-align: right; color: red;">200,000VND</p>
+        </div>
     </main>
 
-    <footer>
-        <img src="logo.png" width="40" height="40">
-        <p></p>
+    <footer class="header_footer">
+        <img src="logo.png" width="40" height="40" style="border-radius: 50%"> <br>
+        <b>13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</b>
     </footer>
 </body>
 </html>
