@@ -5,7 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 4</title>
 </head>
-<body>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .background-header{
+        background-color:blue;
+        box-shadow: 3px 3px 10px #8e8e8e;
+        padding-left: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .background_footer{
+        background-color: blue;
+        padding-left: 60px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 80px;
+        box-shadow: 3px 3px 10px #8e8e8e;
+    }
+    .img-logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    #content{
+        padding-top: 40px;
+        padding-left: 60px;
+    }
+
+    #title_3{
+        text-transform: uppercase;
+        padding-left: 60px;
+        padding-top: 30px;
+        color: blue;
+    }
     
+    .frames_course{
+        padding-top: 30px;
+        padding-left: 60px;
+        width: 300px;
+    }
+
+    .info_sold_out_course{
+        border: 2px solid red;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .image_course{
+        width: 300px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+</style>
+
+<body>
+    <header class="background-header">
+        <img class="img-logo" src="logo.png" alt="logo acadermy">
+        <h1 style="color: white;">PlusPlus Acadermy</h1>
+    </header>
+
+    <main>
+        <div id="content">
+            <h1 style="text-transform: uppercase;">Plus Plus, Where you can shine with us!</h1>
+            <p>It is a long estabished fact that a reder will be distracted by the
+            readable content of a page when looking at its layout. The point of using
+            Lorem Ipsun it has a more-or-less normal distribution of letter, as opposed 
+            using 'Content here, content here', making it look like readable English.
+            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+            and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+            Various versions have evolve over the year, sometimes by accident, sometimes on purpose
+            (injected humour and the like).</p>
+        </div>
+        <div>
+            <h2 id="title_3">sold out course</h2>
+                <div class="frames_course">
+                    <div>
+                        <img class="image_course" src="Front-end.png" alt="Front-end course image">
+                    </div>
+                    <div class="info_sold_out_course">
+                        <p>Front-end fundametal course.</p>
+                        <div>
+                            <img style="border-radius: 50%; width: 60px; height: 60px;" src="teacher.jpg">
+                            <span>Doremon</span>
+                            <p style="text-align: right; color: red;">200.000Vnd</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </main>
+    <footer class="background_footer">
+        <div>
+            <img style="width: 50px; height: 50px;" src="logo.png" alt="logo Acadermy">
+            <h3 style="color: white;">13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</h3>
+        </div>
+    </footer>
 </body>
 </html>
