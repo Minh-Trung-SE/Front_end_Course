@@ -44,13 +44,6 @@
         padding-left: 60px;
     }
 
-    #title_3{
-        text-transform: uppercase;
-        padding-left: 60px;
-        padding-top: 30px;
-        color: blue;
-    }
-
     .image_course{
         width: 317px;
         border-top-left-radius: 5px;
@@ -63,25 +56,42 @@
         padding-left: 15px;
     }
 
-    div.relative_1{
-        position: relative;
-        top: 20px;
+    #relative_title_3{
+        position: absolute;
+        text-transform: uppercase;
+        left: 60px;
+        top:  20px;
+        color: blue;
+    }
+
+    .relative_1{
+        position: absolute;
+        top: 80px;
         left: 60px;
         width: 300px;
     }
 
-    div.relative_2{
+    .relative_2{
         position: absolute;
-        top: 328px;
+        top: 80px;
         left: 400px;
         width: 300px;
     }
 
-    div.relative_3{
-        position: relative;
+    .relative_3{
+        position: absolute;
+        top: 80px;
         left: 740px;
-        top: -230px;
-        weight: 300px;
+        width: 300px;
+    } 
+
+    .position_1{
+        position: relative;
+        height: 250px;
+    }
+
+    .position_2{
+        position: relative;
     }
 </style>
 
@@ -103,8 +113,8 @@
             Various versions have evolve over the year, sometimes by accident, sometimes on purpose
             (injected humour and the like).</p>
         </div>
-        <div>
-            <h2 id="title_3">sold out course</h2>
+        <div class="position_1" >
+            <h2 id="relative_title_3">sold out course</h2>
 
                 <div class="relative_1">
                     <div>
