@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlusPlus Acadermy</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+
+    }
+
+    .header{
+        background-color: #238ffd;
+        box-shadow: 3px 3px 10px #8e8e8e;
+        padding: 10px 20px;
+    }
+
+    .header img{
+        vertical-align: middle;
+    }
+
+    .header h1{
+        color: white;
+        vertical-align: middle;
+        display: inline;
+        margin: 20px;
+        font-weight: bold;
+        font-size: 26px;
+        
+    }
+
+    .plus_link {
+        color: white;
+        margin-left: 20px;
+        display: inline;
+    }
+
+    .plus_link.about{
+        border-bottom: 2px solid white;
+    }
+
+    .header_contain{
+        height: 20px;
+        display: inline;
+        padding-top: 30px;
+    }
+
+    .content {
+        max-width: 1140px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .nav_link{
+        float: right;
+        padding-top: 20px;
+    }
+
+    .banner{
+        background-image: url(Block.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+
+    .background_banner_opacity{
+        width: 100%;
+        height: 400px;
+        background-color: black;
+        opacity: 0.7;
+        position: absolute;
+    }
+    .container_banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        top: 120px;
+    }
+
+    .container_banner h1{
+        text-transform: uppercase;
+        color: white;
+        display: inline;
+        position: relative;
+        animation: move;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        padding-bottom: 20px;
+    }
+    
+    @keyframes move{
+        from {top: -80px;}
+        to {top: 0px;}
+    }
+
+
+    .register{
+        display: inline;
+        padding: 10px 40px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 26px;
+        background-color: #23fd52;
+        border: 0;
+        color: aliceblue;
+    }
+
+    .hover {
+        background-color: blue;
+    }
+
+    .hover:hover {
+        background-color:#23fd52;
+    }
+
+    .content_main{
+        height: auto;
+        width: auto;
+    }
+
+    .content_main h1{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .content_main p{
+        padding-left: 80px;
+        padding-right: 80px;
+        text-align: center;
+        margin-top: 20px;
+    }
+/*Container of group soldout course*/
+    .soldout_course{
+        padding-top: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; /*Căn giữa*/
+    }
+
+    .soldout_course_h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 40px;
+    }
+
+    .soldout_card_image{
+        width: 256px;
+        height: 144px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-image: url(./abc.png);
+        background-position: center;
+        background-size: cover; /*Tại sao chỉ cần đặt cái margin của coldout content là đc ?*/
+    }
+/*content of each soldout course*/
+    .soldout_course_content{
+        width: 256px;
+        background-color: #f5ecec;
+        padding: 10px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .souldout_card{
+        width: 256px;
+        height: auto;
+    }
+
+    .name_soldout_course{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .teacher_soldout_course{
+        margin-bottom: 10px;
+    }
+
+    .border_radius{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+    }
+
+
+</style>
+<body>
+    <header class="header">
+        <div class="content">
+            <img src="logo.png" alt="picture PlusPlus Acadermy" style="width: 50px; height: 50px; border-radius: 50%;">
+            <h1 style="display: inline;">PlusPlus Acadermy</h1>
+            <div class="nav_link">
+                <nav class="header_contain">
+                    <a class="plus_link about">About us</a>
+                    <a class="plus_link">Course</a>
+                    <a class="plus_link">Register</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="background_banner_opacity"></div>
+            <div class="container_banner">
+                <h1>Plus plus</h1>
+                <button class="hover register">Register</button>
+            </div>            
+        </div>
+        <div class="content_main">
+            <h1>Plus Plus, Where you can shine with us!</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
+            as opposed to using 'Content here, content here', making it look like readable English. 
+            Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, 
+            and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
+            sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+        <div>
+            <h2 class="soldout_course_h2">soldout course</h2>
+            <div class="soldout_course">         
+                <div class="soldout_card">
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Front-End Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>             
+                </div>
+                <div class="soldout_card">
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Javascript Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>             
+                </div>
+                <div class="soldout_card">
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Python Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>             
+                </div>
+                <div class="soldout_card">
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Java Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

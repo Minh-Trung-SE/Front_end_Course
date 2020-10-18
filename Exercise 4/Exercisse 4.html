@@ -8,6 +8,7 @@
 </head>
 
 <style>
+
     * {
         padding: 0;
         margin: 0;
@@ -23,6 +24,7 @@
         padding-left: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
+        height: 50px;
     }
 
     .background_footer{
@@ -30,13 +32,14 @@
         padding-left: 60px;
         padding-top: 10px;
         padding-bottom: 10px;
-        margin-top: 80px;
+        margin-top: 300px;
         box-shadow: 3px 3px 10px #8e8e8e;
     }
     .img-logo{
         width: 50px;
         height: 50px;
         border-radius: 50%;
+        
     }
 
     #content{
@@ -57,48 +60,65 @@
     }
 
     #relative_title_3{
-        position: absolute;
         text-transform: uppercase;
-        left: 60px;
-        top:  20px;
+        padding-left: 60px;
+        padding-top:  20px;
         color: blue;
     }
 
-    .relative_1{
-        position: absolute;
+    #relative_title_4{
+        position: relative;
+        text-transform: uppercase;
         top: 80px;
+        left: 60px;
+        color: blue;
+    }
+
+    .border_1{
+        display: block;
+    }
+
+    .relative_1{
+        position: relative;
+        top: 60px;
         left: 60px;
         width: 300px;
     }
 
     .relative_2{
-        position: absolute;
-        top: 80px;
-        left: 400px;
+        position: relative;
+        top: 60px;
+        left: 100px;        
         width: 300px;
     }
 
     .relative_3{
-        position: absolute;
-        top: 80px;
-        left: 740px;
+        position: relative;
+        top: 60px;
+        left: 140px;
         width: 300px;
+    }
+
+    #block_inline{
+        display: inline-block;
     } 
 
-    .position_1{
+    .frames_our_teacher{
+        width: 400px;
+        height: 100px;
+        border: 1px solid red;
         position: relative;
-        height: 250px;
-    }
+        top: 100px;
+        left: 60px;
+    } 
 
-    .position_2{
-        position: relative;
-    }
 </style>
 
 <body class="font_roboto">
     <header class="background-header">
-        <img class="img-logo" src="logo.png" alt="logo acadermy">
-        <h1 style="color: white;">PlusPlus Acadermy</h1>
+        <img class="img-logo" style="float: left; vertical-align: middle;" src="logo.png" alt="logo acadermy">
+        <h1 style="color: white; ">PlusPlus Acadermy</h1>
+        <span style="float: right;">hha</span>
     </header>
 
     <main>
@@ -113,10 +133,10 @@
             Various versions have evolve over the year, sometimes by accident, sometimes on purpose
             (injected humour and the like).</p>
         </div>
-        <div class="position_1" >
+        <div>
             <h2 id="relative_title_3">sold out course</h2>
 
-                <div class="relative_1">
+                <div class="relative_1" id="block_inline">
                     <div>
                         <img class="image_course" src="Front-end.png" alt="Front-end course image">
                     </div>
@@ -130,8 +150,8 @@
                     </div>
                 </div>
 
-                <div class="relative_2" >
-                    <div class="frames_course_2 ">
+                <div class="relative_2" id="block_inline">
+                    <div class="frames_course_2">
                         <div>
                             <img class="image_course" src="Front-end.png" alt="javacore">
                         </div>
@@ -146,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="relative_3">
+                <div class="relative_3" id="block_inline">
                     <div>
                         <img class="image_course" src="Front-end.png" alt="Python">
                     </div>
@@ -160,6 +180,19 @@
                     </div>
 
                 </div>
+        </div>
+
+        <div>
+            <div id="relative_title_4">
+                <h2>Our teacher</h2>
+            </div>
+            <div class="frames_our_teacher">
+                <div>
+                    <img style="width: 150px; height: 100px; vertical-align: middle;" src="teacher.jpg" alt="Python">
+                    
+                </div>
+            </div>
+
         </div>
 
     </main>
