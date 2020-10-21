@@ -214,9 +214,20 @@
 
     .image_our_teacher {
         width: 248px;
-        height: 100%;
+        height: 200px;
         transition: 1s;
         background-size: cover;
+        background-position: center;
+    }
+
+    .count_course{
+        width: auto;
+        background-color: black;
+        color: white;
+        opacity: 0.8;
+        text-align: center;
+        position: relative;
+        top: -30px;
     }
 
     .image_our_teacher:hover{
@@ -228,7 +239,6 @@
         height: 200px;
         background-color:#ececec;
         padding: 20px;
-        z-index: 3;
     }
 
     .name_our_teacher{
@@ -311,6 +321,7 @@
         background-color: #ececec;
         padding-left: 30px;
         padding-right: 15px;
+        margin-bottom: 40px;
     }
 
     .form_iteam{
@@ -348,6 +359,35 @@
         margin-bottom: 30px;
     }
 
+    .footer{
+        background-color: #238ffd;
+        box-shadow: 3px 3px 10px #8e8e8e;
+        padding: 10px 20px;
+    }
+    
+    .content_footer{
+        max-width: 1140px;
+        margin: 0 auto; /*margin auto là gì vậy*/
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_addres{
+        width: 570px;
+    }
+
+    .img_addres p{
+        text-transform: capitalize;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+    }
+
+    .more_about_us{
+        width: 570px;
+        color: white;
+    }
 </style>
 <body>
     <header class="header">
@@ -432,7 +472,10 @@
             <section class="section_2">Our teacher</section>
             <div class="container_our_teacher">
                 <div class="box_our_teacher">
-                    <img class="image_our_teacher" src="my-tam-teacher.jpg">                                        
+                    <div>
+                        <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
                     <div class="content_our_teacher">
                         <p class="name_our_teacher">Phạm Mỹ Tâm</p>
                         <p class="job_our_teacher">Job title: Singer, Dancer...</p>
@@ -440,7 +483,10 @@
                     </div>
                 </div>
                 <div class="box_our_teacher">
-                    <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                    <div>
+                        <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
                     <div class="content_our_teacher">
                         <p class="name_our_teacher">Phạm Mỹ Tâm</p>
                         <p class="job_our_teacher">Job title: Singer, Dancer...</p>
@@ -448,7 +494,10 @@
                     </div>
                 </div>
                 <div class="box_our_teacher">
-                    <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                    <div>
+                        <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
                     <div class="content_our_teacher">
                         <p class="name_our_teacher">Phạm Mỹ Tâm</p>
                         <p class="job_our_teacher">Job title: Singer, Dancer...</p>
@@ -456,7 +505,10 @@
                     </div>
                 </div>
                 <div class="box_our_teacher">
-                    <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                    <div>
+                        <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
                     <div class="content_our_teacher">
                         <p class="name_our_teacher">Phạm Mỹ Tâm</p>
                         <p class="job_our_teacher">Job title: Singer, Dancer...</p>
@@ -500,7 +552,22 @@
         </div>
     </main>
 </body>
-<footer>
-
+<footer class="footer">
+    <div class="content_footer">
+        <div class="img_addres">
+            <img src="logo.png"style="width: 50px; height: 50px; border-radius: 50%;">
+            <br>
+            <p>13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</p>
+        </div>
+        <div class="more_about_us">
+            <p>Thông tin chung</p>
+            <br>
+            <p>Chính sách</p>
+            <br>   
+            <p>Điều khoản</p>
+            <br>
+            <p></p>Về chúng tôi</p>
+        </div>
+    </div>
 </footer>
 </html>
