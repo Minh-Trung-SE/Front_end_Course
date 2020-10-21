@@ -97,29 +97,20 @@
         padding-bottom: 20px;
     }
     
-    @keyframes move{
-        from {top: -80px;}
-        to {top: 0px;}
-    }
-
-
     .register{
         display: inline;
         padding: 10px 40px;
         border-radius: 5px;
         text-transform: uppercase;
         font-size: 26px;
-        background-color: #23fd52;
+        background-color: blue;
         border: 0;
         color: aliceblue;
+        transition: 1s;
     }
 
-    .hover {
-        background-color: blue;
-    }
-
-    .hover:hover {
-        background-color:#23fd52;
+    .register:hover{
+        background-color: orange;
     }
 
     .content_main{
@@ -169,26 +160,33 @@
 /*content of each soldout course*/
     .soldout_course_content{
         width: 256px;
-        background-color: #f5ecec;
-        padding: 10px;
-        margin-right: 30px;
-        margin-bottom: 30px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+        height: 144px;
+        transition: 0.5s;
     }
 
-    .souldout_card{
+    .soldout_card{
         width: 256px;
-        height: auto;
+        height: 288;
+        margin-right: 40px;
+        overflow: hidden;
+        z-index: 1;
+        background-color: #f5ecec;
+        border-radius: 5px;
+        transition: 0.7s;
+    }
+
+    .soldout_card:hover{
+        box-shadow: 3px 3px 3px blue;
+        ;
     }
 
     .name_soldout_course{
-        margin-bottom: 10px;
-        margin-top: 10px;
+        padding: 20px;
+       
     }
 
     .teacher_soldout_course{
-        margin-bottom: 10px;
+        padding: 20px;
     }
 
     .border_radius{
@@ -198,6 +196,157 @@
         vertical-align: middle;
     }
 
+    .box_our_teacher{
+        width: 548px;
+        height: 200px;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        z-index: 2;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        transition: 0.7s;
+    }
+
+    .box_our_teacher:hover{
+        box-shadow: 3px 3px 3px blue;
+    }
+
+    .image_our_teacher {
+        width: 248px;
+        height: 100%;
+        transition: 1s;
+        background-size: cover;
+    }
+
+    .image_our_teacher:hover{
+        transform: scale(1.2,1.2);
+    }
+
+    .content_our_teacher{
+        width: 300px;
+        height: 200px;
+        background-color:#ececec;
+        padding: 20px;
+        z-index: 3;
+    }
+
+    .name_our_teacher{
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .job_our_teacher{
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .birth_our_teacher{
+        margin-bottom: 10px;
+    }
+    
+    .container_our_teacher{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content_main_our_teacher{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .section_2{
+        text-transform: uppercase;
+        font-size: 26px;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .submit{
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        background-color: #238ffd;
+        border: 0px;
+        border-radius: 5px;
+        transition: 1s;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        float: right;
+    }
+
+    .submit:hover{
+        background-color: orange;
+    }
+
+    .container_contact_us{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .image_contact_us{
+        width: 500px;
+        height: 340px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .form_contact_us{
+        width: 500px;
+        height: 340px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: #ececec;
+        padding-left: 30px;
+        padding-right: 15px;
+    }
+
+    .form_iteam{
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    .lable{
+        width: 150px;
+    }
+
+    .input{
+        height: 40px;
+        padding: 10px;
+        flex-grow: 1;
+        border: 2px solid bisque;
+        border-radius: 5px;
+    }
+
+    .form_contact_us p{
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    #section_3{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
 </style>
 <body>
@@ -219,7 +368,7 @@
             <div class="background_banner_opacity"></div>
             <div class="container_banner">
                 <h1>Plus plus</h1>
-                <button class="hover register">Register</button>
+                <button class="hover register">Register now</button>
             </div>            
         </div>
         <div class="content_main">
@@ -231,7 +380,9 @@
             and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, 
             sometimes by accident, sometimes on purpose (injected humour and the like).</p>
         </div>
-        <div>
+
+        <!--Sold Course-->
+        <div> 
             <h2 class="soldout_course_h2">soldout course</h2>
             <div class="soldout_course">         
                 <div class="soldout_card">
@@ -247,7 +398,7 @@
                 <div class="soldout_card">
                     <div class="soldout_card_image"></div>
                     <div class="soldout_course_content">
-                        <div class="name_soldout_course">Fundametal Javascript Course</div>
+                        <div class="name_soldout_course">Python Advance</div>
                         <div class="teacher_soldout_course">
                             <img src="teacher.jpg" class="border_radius">
                             <span>Doremon</span>
@@ -276,6 +427,80 @@
                 </div>
             </div>
         </div>
+        <!--Our teacher-->
+        <div class="content_main_our_teacher">
+            <section class="section_2">Our teacher</section>
+            <div class="container_our_teacher">
+                <div class="box_our_teacher">
+                    <img class="image_our_teacher" src="my-tam-teacher.jpg">                                        
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+                <div class="box_our_teacher">
+                    <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+                <div class="box_our_teacher">
+                    <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+                <div class="box_our_teacher">
+                    <img class="image_our_teacher" src="my-tam-teacher.jpg">
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contact with us-->
+        <div>
+            <section id="section_3">Contact us</section>
+            <div class="container_contact_us">
+                <img class="image_contact_us" src="contact us.jpg">
+                <div class="form_contact_us">
+                    <p>Please Fill Out Below form</p>
+                    <form>
+                        <div class="form_iteam">
+                            <label class="lable" for="fullname">Fullname</label>
+                            <input class="input" type="text" id="fullname" placeholder="Fullname">
+                        </div>
+
+                        <div class="form_iteam">
+                            <label class="lable" for="email">Email</label>
+                            <input class="input" type="email" id="email" placeholder="abc@gmail.com">
+                        </div>
+
+                        <div class="form_iteam">
+                            <label class="lable" for="phone">Phone</label>
+                            <input class="input" type="number" id="phone" placeholder="Phone">
+                        </div>
+
+                        <div class="form_iteam">
+                            <label class="lable" for="age">Age</label>
+                            <input class="input" type="age" id="age" placeholder="Age">
+                        </div>
+
+                        <button type="submit" class="submit">Register now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+<footer>
+
+</footer>
 </html>
