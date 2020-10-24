@@ -8,8 +8,7 @@
 <body>
     <script>
 
-        function CovertMonth(){
-            let month = prompt("Input month: ", "");
+        function CovertMonth(month){
             switch(month) {
                 case "1": 
                     console.log("Tháng 1");
@@ -52,7 +51,8 @@
                     break;
             }
         }
-        CovertMonth();
+        let month = prompt("Input month: ", "");
+        CovertMonth(month);
     </script>
 </body>
 </html>
