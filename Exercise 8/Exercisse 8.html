@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Fomat.css" />
+    <title>PlusPlus Acadermy</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="content">
+            <img src="logo.png" alt="picture PlusPlus Acadermy" style="width: 50px; height: 50px; border-radius: 50%;">
+            <h1 style="display: inline;">PlusPlus Acadermy</h1>
+            <div class="nav_link">
+                <nav class="header_contain">
+                    <a class="plus_link_about">About us</a>
+                    <a class="plus_link_course">Course</a>
+                    <a class="plus_link_register">Register</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="background_banner_opacity"></div>
+            <div class="container_banner">
+                <h1>Plus plus</h1>
+                <button class="hover register">Register now</button>
+            </div>
+        </div>
+        <div class="content_main">
+            <h1>Plus Plus, Where you can shine with us!</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+
+        <div class="falsh_sale_container">
+            <h2>Welcome International Singles Day</h2>
+            <div class="timeCountDown_container">
+                <span class="timeCountDown" id="hour"></span>
+                <span class="timeCountDown" id="minute"></span>
+                <span class="timeCountDown" id="second"></span>
+            </div>
+        </div>
+
+        <script src="ProcessJS.js"></script>
+
+        <!--Sold Course-->
+        <div>
+            <h2 class="soldout_course_h2">soldout course</h2>
+            <div class="soldout_course">
+                <div class="soldout_card">
+                    <button class="buy_bth" onclick="addToCard(event)">Buy</button>
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Front-End Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="soldout_card">
+                    <button class="buy_bth" onclick="addToCard(event)">Buy</button>
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Python Advance</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="soldout_card">
+                    <button class="buy_bth" onclick="addToCard(event)">Buy</button>
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Python Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="soldout_card">
+                    <button class="buy_bth" onclick="addToCard(event)">Buy</button>
+                    <div class="soldout_card_image"></div>
+                    <div class="soldout_course_content">
+                        <div class="name_soldout_course">Fundametal Java Course</div>
+                        <div class="teacher_soldout_course">
+                            <img src="teacher.jpg" class="border_radius">
+                            <span>Doremon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Our teacher-->
+        <div class="content_main_our_teacher">
+            <section class="section_2">Our teacher</section>
+            <div class="container_our_teacher">
+                <div class="box_our_teacher">
+                    <div>
+                        <img class="image_our_teacher" src="our teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+                <div class="box_our_teacher">
+                    <div>
+                        <img class="image_our_teacher" src="our teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+                <div class="box_our_teacher">
+                    <div>
+                        <img class="image_our_teacher" src="our teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+                <div class="box_our_teacher">
+                    <div>
+                        <img class="image_our_teacher" src="our teacher.jpg">
+                        <p class="count_course">10 Course</p>
+                    </div>
+                    <div class="content_our_teacher">
+                        <p class="name_our_teacher">Phạm Mỹ Tâm</p>
+                        <p class="job_our_teacher">Job title: Singer, Dancer...</p>
+                        <p class="birth_our_teacher">17/07/2001</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Contact with us-->
+        <div>
+            <section id="section_3">Contact us</section>
+            <div class="container_contact_us">
+                <img class="image_contact_us" src="contact us.jpg">
+                <div class="form_contact_us">
+                    <p>Please Fill Out Below form</p>
+                    <form>
+                        <div class="form_iteam">
+                            <label class="lable" for="fullname">Fullname</label>
+                            <input class="input" type="text" id="fullname" onkeyup="inputValidate('fullname')" placeholder="Fullname">
+                        </div>
+
+                        <div class="form_iteam">
+                            <label class="lable" for="email">Email</label>
+                            <input class="input" type="email" id="email" onkeyup="inputValidate('email')" placeholder=" abc@gmail.com ">
+                        </div>
+
+                        <div class="form_iteam ">
+                            <label class="lable " for="phone ">Phone</label>
+                            <input class="input" type="number" id="phone" onkeyup="inputValidate('phone') " placeholder="Phone ">
+                        </div>
+
+                        <div class="form_iteam ">
+                            <label class="lable " for="age ">Age</label>
+                            <input class="input " onkeyup="inputValidate('age') " type="age" id="age" placeholder="Age">
+                        </div>
+
+                        <button onclick="validateForm()" type="button" class="submit">Register now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="bought_info">
+            Total sold
+            <span id="total_bought">0</span>
+        </div>
+
+        <div class="animation_bought" id="animation_bought">
+            <h4>Nguyễn Minh Trung vừa mua khoá học online</h4>
+            <p>11:14 PM Monday</p>
+        </div>
+    </main>
+</body>
+<footer class="footer ">
+    <div class="content_footer ">
+        <div class="img_addres ">
+            <img src="logo.png " style="width: 50px; height: 50px; border-radius: 50%; ">
+            <br>
+            <p>13 Nguyen Thai Hoc Street, Ba Dinh, Ha Noi</p>
+        </div>
+        <div class="more_about_us ">
+            <p>Thông tin chung</p>
+            <br>
+            <p>Chính sách</p>
+            <br>
+            <p>Điều khoản</p>
+            <br>
+            <p></p>Về chúng tôi</p>
+        </div>
+    </div>
+</footer>
+
+
+</script>
+
+</html>
